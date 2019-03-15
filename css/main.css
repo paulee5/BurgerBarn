@@ -270,28 +270,33 @@ body, html {
 }
 
 .footer {
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: red;
+  background-color: #2B2A2A;
   color: white;
   text-align: center;
 }
 .button {
   position: relative;
-  background-color: red;
+  background-color: #2B2A2A;
   border: none;
   font-size: 28px;
   color: white;
   padding: 20px;
-  width: 200px;
+  max-width: 400px;
+  height: 75px;
   text-align: center;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
   text-decoration: none;
   overflow: hidden;
   cursor: pointer;
+}
+
+.button:hover {
+  opacity:.7;
 }
 
 .button:after {
