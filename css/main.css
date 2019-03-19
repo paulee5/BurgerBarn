@@ -18,6 +18,19 @@ li a {
   text-decoration: none;
 }
 
+.info-container {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
+  /* Set a specific height */
+  height: 200px;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: white;
+}
+
 #Logo {
   height: 180px;
   width: auto;
@@ -70,11 +83,14 @@ body {
 
 /* Style the counter cards */
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
   /* this adds the "card" effect */
   padding: 16px;
   text-align: center;
   background-color: #f1f1f1;
+  border-style:outset;
+  border-weight: 20px;
+  border-color: ;
 }
 
 /* Responsive columns - one column layout (vertical) on small screens */
