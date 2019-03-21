@@ -83,14 +83,13 @@ body {
 
 /* Style the counter cards */
 .card {
-
   /* this adds the "card" effect */
   padding: 16px;
   text-align: center;
   background-color: #f1f1f1;
-  border-style:outset;
+  border-style: outset;
   border-weight: 20px;
-  border-color: ;
+  border-color: red;
 }
 
 /* Responsive columns - one column layout (vertical) on small screens */
@@ -296,6 +295,11 @@ body, html {
   text-align: center;
 }
 
+.categories .card {
+  border-color: black;
+  border-style: outset;
+}
+
 .button {
   position: relative;
   background-color: #2B2A2A;
@@ -303,7 +307,7 @@ body, html {
   font-size: 28px;
   color: white;
   padding: 20px;
-  width: 374px;
+  max-width: 400px;
   height: 75px;
   text-align: center;
   -webkit-transition-duration: 0.4s;
@@ -340,22 +344,14 @@ body, html {
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
-  width: 100%;
-  /* Full width */
-  padding: 12px;
-  /* Some padding */
-  border: 1px solid #ccc;
-  /* Gray border */
-  border-radius: 4px;
-  /* Rounded borders */
-  box-sizing: border-box;
-  /* Make sure that padding and width stays in place */
-  margin-top: 6px;
-  /* Add a top margin */
-  margin-bottom: 16px;
-  /* Bottom margin */
-  resize: vertical
-    /* Allow the user to vertically resize the textarea (not horizontally) */
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 /* Style the submit button with a specific background color etc */
@@ -371,4 +367,11 @@ input[type=submit] {
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
   background-color: red;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
 }
