@@ -37,7 +37,8 @@ li a {
 }
 
 #Phone {
-  height: 482;
+  height: 480px;
+  width: 500px;
 }
 
 #Map {
@@ -298,6 +299,8 @@ body, html {
 .categories .card {
   border-color: black;
   border-style: outset;
+  background-color: red;
+  color: white;
 }
 
 .button {
