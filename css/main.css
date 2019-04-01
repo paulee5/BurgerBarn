@@ -42,8 +42,8 @@ li a {
 }
 
 #Map {
-  height: 500px;
-  width: auto;
+  height: 480px;
+  width: 500px;
   float: right;
 }
 
@@ -313,9 +313,6 @@ body, html {
   max-width: 400px;
   height: 75px;
   text-align: center;
-  -webkit-transition-duration: 0.4s;
-  /* Safari */
-  transition-duration: 0.4s;
   text-decoration: none;
   overflow: hidden;
   cursor: pointer;
@@ -323,6 +320,9 @@ body, html {
 
 .button:hover {
   opacity: .7;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
 }
 
 .button:after {
